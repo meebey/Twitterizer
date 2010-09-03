@@ -43,10 +43,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="TwitterDirectMessageAsync.cs" />
+    <Compile Include="TwitterFavoriteAsync.cs" />
     <Compile Include="TwitterFriendshipAsync.cs" />
     <Compile Include="OAuthUtilityAsync.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwitterAccountAsync.cs" />
+    <Compile Include="TwitterSearchAsync.cs" />
     <Compile Include="TwitterTimelineAsync.cs" />
     <Compile Include="TwitterUserAsync.cs" />
   </ItemGroup>
