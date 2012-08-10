@@ -11,7 +11,7 @@
     <RootNamespace>Twitterizer</RootNamespace>
     <AssemblyName>Twitterizer2</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>Twitterizer2.snk</AssemblyOriginatorKeyFile>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
