@@ -247,6 +247,7 @@ namespace Twitterizer.Core
                 responseData = ConversionUtility.ReadStream(exceptionResponse.GetResponseStream());
                 twitterResponse.Content = Encoding.UTF8.GetString(responseData, 0, responseData.Length);
 
+#if MONO_4_0
                 if (!String.IsNullOrEmpty(twitterResponse.Content))
                 {
                     var responseContent = JsonConvert.DeserializeObject<dynamic>(twitterResponse.Content);
@@ -260,6 +261,7 @@ namespace Twitterizer.Core
                         }
                     }
                 }
+#endif
 
 #if !SILVERLIGHT
                 rateLimiting = ParseRateLimitHeaders(exceptionResponse.Headers);
